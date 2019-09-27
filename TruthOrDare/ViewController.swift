@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Crashlytics
+//import Crashlytics
 
 class ViewController: UIViewController {
 
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func crashButtonTapped(_ sender: AnyObject) {
-        Crashlytics.sharedInstance().crash()
+//        Crashlytics.sharedInstance().crash()
     }
 
 

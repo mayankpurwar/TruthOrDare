@@ -6,8 +6,8 @@
 //  Copyright © 2018 Lawrey. All rights reserved.
 //
 
-import Quick
-import Nimble
+//import Quick
+//import Nimble
 
 @testable import TruthOrDare
 

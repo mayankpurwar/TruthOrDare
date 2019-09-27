@@ -14,10 +14,6 @@
 		AB654D87212D686800080E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB654D85212D686800080E76 /* LaunchScreen.storyboard */; };
 		AB654D95212DA86400080E76 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D94212DA86400080E76 /* ViewModelTests.swift */; };
 		AB654D9D212DAA3E00080E76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D9C212DAA3E00080E76 /* ViewModel.swift */; };
-		ABAF8A6121303418001DA576 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAF8A5D21303418001DA576 /* Crashlytics.framework */; };
-		ABAF8A6221303418001DA576 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAF8A5E21303418001DA576 /* Fabric.framework */; };
-		ABAF8A6F2130372C001DA576 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAF8A6D2130372C001DA576 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABAF8A702130372C001DA576 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAF8A6E2130372C001DA576 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ABAF8A6F2130372C001DA576 /* Nimble.framework in CopyFiles */,
-				ABAF8A702130372C001DA576 /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +50,6 @@
 		AB654D94212DA86400080E76 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		AB654D96212DA86400080E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB654D9C212DAA3E00080E76 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		ABAF8A5D21303418001DA576 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Carthage/Build/iOS/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
-		ABAF8A5E21303418001DA576 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = SOURCE_ROOT; };
-		ABAF8A6D2130372C001DA576 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		ABAF8A6E2130372C001DA576 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAF8A6121303418001DA576 /* Crashlytics.framework in Frameworks */,
-				ABAF8A6221303418001DA576 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +73,6 @@
 		AB654D70212D686700080E76 = {
 			isa = PBXGroup;
 			children = (
-				ABAF8A6D2130372C001DA576 /* Nimble.framework */,
-				ABAF8A6E2130372C001DA576 /* Quick.framework */,
 				AB654D7B212D686700080E76 /* TruthOrDare */,
 				AB654D93212DA86400080E76 /* TruthOrDareTests */,
 				ABAF8A5B21303403001DA576 /* Frameworks */,
@@ -129,8 +115,6 @@
 		ABAF8A5B21303403001DA576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABAF8A5D21303418001DA576 /* Crashlytics.framework */,
-				ABAF8A5E21303418001DA576 /* Fabric.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -145,7 +129,6 @@
 				AB654D75212D686700080E76 /* Sources */,
 				AB654D76212D686700080E76 /* Frameworks */,
 				AB654D77212D686700080E76 /* Resources */,
-				ABAF8A662130348E001DA576 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,22 +215,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		ABAF8A662130348E001DA576 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/Carthage/Build/iOS/Fabric.framework/run\" ccecd894afb473edc8152a03eea12a134cb9e970 4094f91a9ae4c861e895e9a7864c533e471ca4a85ec8ba6ea45082a6bc16422e";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB654D75212D686700080E76 /* Sources */ = {
@@ -416,9 +383,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = QHX8326X9Q;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K88VHYCVJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -430,8 +397,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jenkins.TruthOrDare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "83decf74-0431-435d-8837-d934bbf8f0ad";
-				PROVISIONING_PROFILE_SPECIFIER = "Truth Or Dare";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,9 +408,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = QHX8326X9Q;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K88VHYCVJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -455,8 +422,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jenkins.TruthOrDare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "83decf74-0431-435d-8837-d934bbf8f0ad";
-				PROVISIONING_PROFILE_SPECIFIER = "Truth Or Dare";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
