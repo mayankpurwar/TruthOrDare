@@ -22,9 +22,9 @@ class ViewController: UIViewController {
 
     }
 
-//    @IBAction func crashButtonTapped(_ sender: AnyObject) {
-////        Crashlytics.sharedInstance().crash()
-//    }
+    @IBAction func crashButtonTapped(_ sender: AnyObject) {
+//        Crashlytics.sharedInstance().crash()
+    }
 
 
 
