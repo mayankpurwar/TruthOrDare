@@ -29,14 +29,14 @@ class ViewModel {
         "Curse like sailor for 20 seconds straight."
     ]
     
-    var totalTruths: Int { return truths.count }
-    var totalDares: Int { return dares.count }
-    
-    func getTruth(for number: Int) -> String {
-        return truths[number]
-    }
-    
-    func getDare(for number: Int) -> String {
-        return dares[number]
-    }
+//    var totalTruths: Int { return truths.count }
+//    var totalDares: Int { return dares.count }
+//    
+//    func getTruth(for number: Int) -> String {
+//        return truths[number]
+//    }
+//    
+//    func getDare(for number: Int) -> String {
+//        return dares[number]
+//    }
 }
