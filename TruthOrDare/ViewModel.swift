@@ -19,6 +19,7 @@ class ViewModel {
 //        "Have you ever let someone take the blame for something you did?"
     ]
     
+    
     //Dare
     private let dares = [
         "For a guy, put on makeup. For a girl, wash off your make up.",
