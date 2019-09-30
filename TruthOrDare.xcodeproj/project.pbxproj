@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D403A2341D43100276AA6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180D40362341D43000276AA6 /* Crashlytics.framework */; };
+		180D403B2341D43100276AA6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180D40372341D43000276AA6 /* Fabric.framework */; };
+		180D403D2341DAFD00276AA6 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 180D40382341D43000276AA6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		180D403E2341DAFD00276AA6 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 180D40352341D43000276AA6 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB654D7D212D686700080E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D7C212D686700080E76 /* AppDelegate.swift */; };
 		AB654D7F212D686700080E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D7E212D686700080E76 /* ViewController.swift */; };
 		AB654D82212D686700080E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB654D80212D686700080E76 /* Main.storyboard */; };
@@ -33,12 +37,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				180D403D2341DAFD00276AA6 /* Nimble.framework in CopyFiles */,
+				180D403E2341DAFD00276AA6 /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180D40352341D43000276AA6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
+		180D40362341D43000276AA6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Carthage/Build/iOS/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		180D40372341D43000276AA6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = SOURCE_ROOT; };
+		180D40382341D43000276AA6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
 		AB654D79212D686700080E76 /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB654D7C212D686700080E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB654D7E212D686700080E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180D403A2341D43100276AA6 /* Crashlytics.framework in Frameworks */,
+				180D403B2341D43100276AA6 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +127,10 @@
 		ABAF8A5B21303403001DA576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180D40362341D43000276AA6 /* Crashlytics.framework */,
+				180D40372341D43000276AA6 /* Fabric.framework */,
+				180D40382341D43000276AA6 /* Nimble.framework */,
+				180D40352341D43000276AA6 /* Quick.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -407,9 +423,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K88VHYCVJ;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,9 +450,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K88VHYCVJ;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
